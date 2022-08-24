@@ -1,0 +1,32 @@
+{
+  "name": "strangermeetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mian-ali/strangerMeetup.git"
+  },
+  "keywords": [
+    "meet",
+    "strangers",
+    "videoapp",
+    "live-chat",
+    "screen-shearing-app",
+    "live",
+    "video-chat"
+  ],
+  "author": "Ali Ahmad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mian-ali/strangerMeetup/issues"
+  },
+  "homepage": "https://github.com/mian-ali/strangerMeetup#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}
