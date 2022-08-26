@@ -15,10 +15,25 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
 
+//Short list of users
+let connectedPeers = [];
+
 // Socket Connection
 io.on('connection', (socket) => {
-  console.log('User Connected Successfully to Socket.io Server');
+  connectedPeers.push(socket.id);
+  console.log(connectedPeers, 'List');
   console.log('Socket ID: ' + socket.id);
+
+  socket.on('disconnect', () => {
+    console.log('User Disconnected');
+
+    const newConnectedPeers = connectedPeers.filter((perrSocketId) => {
+      return perrSocketId !== socket.id;
+    });
+
+    connectedPeers = newConnectedPeers;
+    console.log(connectedPeers, 'List');
+  });
 });
 
 // listen Server
