@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 
 <head>
@@ -6,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Online Meet With Strangers</title>
+
+    <!-- Custom Css link -->
+    <link rel='stylesheet' href='./css/style.css'>
 </head>
 
 <body>
-    <h1>Hello Html file from Server</h1>
+
+    <div class='main_container'>
+        <div class='dashboard_container'></div>
+        <div class='call_container'></div>
+        <div class='messenger_container'></div>
+    </div>
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="./js/main.js" type="module"></script>
