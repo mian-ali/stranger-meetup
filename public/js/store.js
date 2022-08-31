@@ -1,10 +1,10 @@
 let state = {
   socketId: null,
   localStream: null,
-  remoteStream: null,
-  screenSharingStream: null,
   allowConnectionFromStrangers: false,
   screenSharingActive: false,
+  remoteStream: null,
+  screenSharingStream: null,
 };
 export const setSocketId = (socketId) => {
   state = {
@@ -46,8 +46,7 @@ export const setRemoteStream = (stream) => {
     remoteStream: stream,
   };
 };
- 
-export const getState = () => {
 
-    return state;
-}
+export const getState = () => {
+  return state;
+};
